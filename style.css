@@ -1,6 +1,74 @@
-/* PALETA DE COLORES */
-.color1 { #69d2e7 };
-.color2 { #a7dbd8 };
-.color3 { #e0e4cc };
-.color4 { #f38630 };
-.color5 { #fa6900 };
+/* PALETA DE COLORES 
+.color1 { #5b4f47 };
+.color2 { #745e4d };
+.color3 { #bd9479 };
+.color4 { #ddc1a7 };
+.color5 { #f8f7f4 };
+.color6 { #ffffff };*/
+
+
+* {
+
+    padding:0px;
+    margin:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #5b4f47;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+
+.logo img {
+    width: 200px;
+
+}
+nav {
+    display:flex;
+    justify-content:space-evenly;
+    width: 70%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main{
+    display: flex;
+    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px red solid;
+    
+}
+
+#logosFooter img {
+    width: 50px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #ddc1a7;
+}
+
+.slider{
+    display: flex;
+    max-height: 500px;
+}
