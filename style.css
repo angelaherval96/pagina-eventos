@@ -1,4 +1,4 @@
-/* PALETA DE COLORES 
+/* PALETA DE COLORES
 .color1 { #5b4f47 };
 .color2 { #745e4d };
 .color3 { #bd9479 };
@@ -8,7 +8,7 @@
 
 
 * {
-
+    overflow-y: hidden;
     padding:0px;
     margin:0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -19,6 +19,8 @@ header {
     align-items: center;
     background-color: #5b4f47;
     color: white;
+    height: 15vh;
+    width: 100%;
 }
 
 .logo{
@@ -46,12 +48,12 @@ a {
 
 main{
     display: flex;
-    max-height: 500px;
+    /* max-height: 500px; */
     justify-content: center;
     align-items: center;
+    height: 80vh;
     flex-direction: column;
-    border: 2px red solid;
-    
+    width: 100%;
 }
 
 #logosFooter img {
@@ -63,12 +65,40 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 5vh;
     width: 100%;
     background-color: #ddc1a7;
 }
 
-.slider{
+.sliders{
     display: flex;
-    max-height: 500px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 2px red solid;
 }
+
+.slider.active{
+    display: flex;
+    
+} 
+.img1, .img2, .img3, .img4{
+    width: 100%;
+    height: 100%;
+    /* opacity: 20%;  */
+}
+.slider{
+    display: none;
+    
+}
+.textoFijo{
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    
+
+}
+
+
