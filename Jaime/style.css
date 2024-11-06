@@ -1,0 +1,148 @@
+/* PALETA DE COLORES 
+.color1 { #5b4f47 };
+.color2 { #745e4d };
+.color3 { #bd9479 };
+.color4 { #ddc1a7 };
+.color5 { #f8f7f4 };
+.color6 { #ffffff };*/
+
+
+* {
+
+    padding:0px;
+    margin:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #5b4f47;
+    color: white;
+    height: 17vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width:30% ;
+}
+
+
+.logo img {
+    width: 200px;
+
+}
+nav {
+    display:flex;
+    justify-content:space-evenly;
+    width: 70%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#contenedorTarjetas{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    
+}
+
+#tarjetasLeft {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    
+
+    
+}
+
+#tarjetasRight {
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+
+}
+
+.tarjetas {
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap:1rem;
+    transition: transform .2s;
+    box-shadow: 3px 3px 10px 2px;
+}
+
+.tarjetas:hover {
+
+    transform: scale(1.1)
+}
+
+
+main {
+
+ 
+    background-color:#f8f7f4 ;
+    display: flex;
+    justify-content: center;
+}
+
+main h1 {
+
+   text-align: center;
+   margin-bottom:3rem ;
+  padding-top: 3rem;
+
+}
+
+
+main img {
+
+    height: 450px;
+    width: 100%;
+
+}
+
+main button{
+
+    padding:20px;
+    background-color: #ddc1a7;
+    
+}
+
+
+
+
+
+#logosFooter img {
+    width: 50px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 5vh;
+    width: 100%;
+    background-color: #ddc1a7;
+}
+
+#parrafoOculto1, #parrafoOculto2, #parrafoOculto3, #parrafoOculto4 {color:green;}
