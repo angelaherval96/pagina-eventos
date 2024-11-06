@@ -10,6 +10,7 @@ header {
     align-items: center;
     background-color: #5b4f47;
     color: white;
+    height: 15vh;
 }
 
 .logo{
@@ -38,4 +39,10 @@ a {
 a:hover{
     color: #ddc1a7; 
     margin-top: -5px;
+}
+main{
+    height: 80vh;
+}
+footer{
+    height: 5vh;
 }
