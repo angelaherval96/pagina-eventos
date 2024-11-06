@@ -54,6 +54,7 @@ main{
     height: 80vh;
     flex-direction: column;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #logosFooter img {
