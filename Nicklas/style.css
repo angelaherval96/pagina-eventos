@@ -1,0 +1,230 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b4f47;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.logo img {
+    width: 200px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    max-height: 1500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px red solid;
+    background-color: #f8f7f4;
+}
+
+#logosFooter img {
+    width: 50px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #ddc1a7;
+}
+
+.slider {
+    display: flex;
+    max-height: 500px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 300px;
+    width: 75%;
+    gap: 40px;
+    padding: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 300px;
+    width: 75%;
+    gap: 40px;
+    padding: 10px;
+}
+
+.item {
+    border: none;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.itemScroll {
+    border: none;
+    background-color: beige;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.eventoIndividual {
+    font-size: 17px;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.football {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 8%;
+}
+
+.basketball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 8%;
+}
+
+.racecar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 15%;
+}
+
+.LaLigaLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 20%;
+    margin-right: -100px;
+}
+
+.UCLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 8%;
+}
+
+.PLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 15%;
+}
+
+.SerieALogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 5%;
+    margin-right: 35px;
+}
+
+.NBALogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 15%;
+}
+
+.EuroLigaLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 20%;
+}
+
+.EndesaLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 18%;
+}
+
+.WNBALogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 16%;
+}
+
+.F1Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 16%;
+}
+
+.WECLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    width: 16%;
+}
+
+
+
