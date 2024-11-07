@@ -20,7 +20,7 @@ header {
 }
 
 .logo img {
-    width: 200px;
+    width: 150px; 
 }
 
 nav {
@@ -42,31 +42,39 @@ a {
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    background-image: url(./resources/t.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .events{
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    width: 100%;
-
+    max-width: 900px;
+    padding: 30px;
+    gap: 20px;
 }
 .cardEvent{
     display: flex;
     justify-content:space-evenly;
     flex-direction: column;
     width: 40%;
+    min-width: 250px;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #f8f7f4;
+    background-color: #f8f7f4e7;
     color: #5b4f47;
     padding: 10px;
     gap: 10px;
-    margin: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px black;
 }
+
+
 
 .cardEvent img{
     width: 50px;
@@ -80,16 +88,17 @@ main{
     color: white;
     transition: 0.5s;
     scale: 1.1;
+    background: linear-gradient(135deg, #5b4f47a7, #ddc1a7b1);
 }
 
 
 button{
     background-color: #5b4f47;
     color: white;
-    border: 1px solid white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px 30px;
     cursor: pointer;
+    border-style: none;
 }
 
 button:hover{
@@ -103,6 +112,7 @@ button:hover{
     width: 50px;
 
 }
+
 
 footer{
     display: flex;

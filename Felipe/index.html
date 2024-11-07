@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teatro</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="../resources/Inicio.png" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teatro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="../resources/Inicio.png" />
+    </div>
+    <nav id="nav">
+      <a href="#">Conciertos</a>
+      <a href="#">Teatro</a>
+      <a href="#">Convenciones</a>
+      <a href="#">Algo</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="events">
+      <div class="cardEvent">
+        <h2>Festival de Jazz</h2>
+        <p>Del 1 al 5 de noviembre</p>
+        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+        <div class="buttons">
+          <button id="evento1Agenda" onclick="reservar('agendaId','reservación exitosa')">reservar</button>
+          <button onclick="info()">+ info</button>
+        </div>
+        <p id="agendaId"></p>
       </div>
-      <nav id="nav">
-        <a href="#">Conciertos</a>
-        <a href="#">Teatro</a>
-        <a href="#">Convenciones</a>
-        <a href="#">Algo</a>
-      </nav>
-    </header>
-
-    <main>
-      <div class="events">
-        <div class="cardEvent">
-          <h2>Festival de Jazz</h2>
-          <p>Del 1 al 5 de noviembre</p>
-          <img
-            src="/pagina-eventos/Felipe/resources/icono-evento.jpg"
-            class="iconoEvento"
-          /><button onclick="agendar()">+ agendar</button>
-          <p id="agenda1"></p>
+      <div class="cardEvent">
+        <h2>Hamlet</h2>
+        <p>Del 6 al 10 de diciembre</p>
+        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+        <div class="buttons">
+          <button id="evento2Agenda" onclick="reservar('agenda2')">reservar</button>
+          <button onclick="info()">+ info</button>
         </div>
-        <div class="cardEvent">
-          <h2>Hamlet</h2>
-          <p>Del 6 al 10 de diciembre</p>
-          <img
-            src="/pagina-eventos/Felipe/resources/icono-evento.jpg"
-            class="iconoEvento"
-          /><button onclick="agendar2()">+ agendar</button>
-          <p id="agenda2"></p>
-        </div>
-        <div class="cardEvent">
-          <h2>Romeo y Julieta</h2>
-          <p>Del 6 al 10 de diciembre</p>
-          <img
-            src="/pagina-eventos/Felipe/resources/icono-evento.jpg"
-            class="iconoEvento"
-          /><button onclick="agendar3()">+ agendar</button>
-          <p id="agenda3"></p>
-        </div>
-        <div class="cardEvent">
-          <h2>RLa Divina Comedia</h2>
-          <p>Del 6 al 10 de enero</p>
-          <img
-            src="/pagina-eventos/Felipe/resources/icono-evento.jpg"
-            class="iconoEvento"
-          /><button onclick="agendar4()">+ agendar</button>
-          <p id="agenda4"></p>
-        </div>
-        <div class="cardEvent">
-          <h2>La Odisea</h2>
-          <p>Del 6 al 10 de febrero</p>
-          <img
-            src="/pagina-eventos/Felipe/resources/icono-evento.jpg"
-            class="iconoEvento"
-          /><button onclick="agendar5()">+ agendar</button>
-          <p id="agenda5"></p>
-        </div>
-        <div class="cardEvent">
-          <h2>La Iliada</h2>
-          <p>Del 6 al 10 de marzo</p>
-          <img
-            src="/pagina-eventos/Felipe/resources/icono-evento.jpg"
-            class="iconoEvento"
-          /><button onclick="agendar6()">+ info</button>
-          <p id="agenda6"></p>
-        </div>
+        <p id="agenda2"></p>
       </div>
-
- 
-    </main>
-
-    <footer>
-      <p>Copyright 2024 Equipo Laravellum</p>
-
-      <div id="logosFooter">
-        <img src="/resources/Inicio.png" />
-        <img src="/resources/Inicio.png" />
-        <img src="/resources/Inicio.png" />
-        <img src="/resources/Inicio.png" />
+      <div class="cardEvent">
+        <h2>Romeo y Julieta</h2>
+        <p>Del 6 al 10 de diciembre</p>
+        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+        <div class="buttons">
+          <button id="evento3Agenda">reservar</button>
+          <button onclick="info()">+ info</button>
+        </div>
+        <p id="agenda3"></p>
       </div>
-    </footer>
+      <div class="cardEvent">
+        <h2>RLa Divina Comedia</h2>
+        <p>Del 6 al 10 de enero</p>
+        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+        <div class="buttons">
+          <button id="evento4Agenda">reservar</button>
+          <button onclick="info()">+ info</button>
+        </div>
+        <p id="agenda4"></p>
+      </div>
+      <div class="cardEvent">
+        <h2>La Odisea</h2>
+        <p>Del 6 al 10 de febrero</p>
+        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+        <div class="buttons">
+          <button id="evento5Agenda">reservar</button>
+          <button onclick="info()">+ info</button>
+        </div>
+        <p id="agenda5"></p>
+      </div>
+      <div class="cardEvent">
+        <h2>La Iliada</h2>
+        <p>Del 6 al 10 de marzo</p>
+        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+        <div class="buttons">
+          <button id="evento6Agenda">reservar</button>
+          <button onclick="info()">+ info</button>
+        </div>
+        <p id="agenda6"></p>
+      </div>
+    </div>
 
-    <script>
+  </main>
+
+  <footer>
+    <p>Copyright 2024 Equipo Laravellum</p>
+
+    <div id="logosFooter">
+      <img src="/resources/Inicio.png" />
+      <img src="/resources/Inicio.png" />
+      <img src="/resources/Inicio.png" />
+      <img src="/resources/Inicio.png" />
+    </div>
+  </footer>
+
+  <script>
+    function reservar(agendaId, mensaje) {
+      document.getElementById(agendaId).textContent = mensaje;
+    }
     
-         function agendar(){
-            document.getElementById('agenda1').innerHTML = "Evento agendado en tu calendario";
-         }
-         function agendar2(){
-            document.getElementById('agenda2').innerHTML = "Evento agendado en tu calendario";
-         }
-         function agendar3(){
-            document.getElementById('agenda3').innerHTML = "Evento agendado en tu calendario";
-         }
-         function agendar4(){
-            document.getElementById('agenda4').innerHTML = "Evento agendado en tu calendario";
-         }
-         function agendar5(){
-            document.getElementById('agenda5').innerHTML = "Evento agendado en tu calendario";
-         }
-         function agendar6(){
-            document.getElementById('agenda6').innerHTML = "Evento agendado en tu calendario";
-         }
-         
-     
-    </script>
-  </body>
+
+  </script>
+</body>
+
 </html>
