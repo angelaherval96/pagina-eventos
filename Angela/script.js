@@ -1,6 +1,7 @@
 const artistas = document.querySelectorAll(".slider");
 let index = 0;
 
+
 function mostrarArtistas(){
     artistas[index].classList.remove('active');
 
@@ -20,8 +21,8 @@ artista1.addEventListener('mouseover', () => {
     artista1.innerHTML('selena') = ('Selena Gomez');
 
 }
-)
+);
     
 
 
-    
+   

@@ -20,18 +20,20 @@ header {
     align-items: center;
     background-color: #5b4f47;
     color: white;
-    height: 15vh;
+    height: 10vh;
 }
 
 .logo{
+
     display: flex;
     justify-content: center;
-    width:30% ;
+    width: 30%;
 }
 
 
 .logo img {
-    width: 200px;
+    width: 9rem;
+    height: 5rem;
 
 }
 nav {
@@ -40,10 +42,20 @@ nav {
     width: 70%;
 }
 
-a {
-    color: white;
+header a{
+
+    color:white;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+
+
+header a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+
+
 }
 
 #contenedorTarjetas{
@@ -117,6 +129,7 @@ main img {
 
     height: 450px;
     width: 100%;
+    border-radius: 15px;
 
 }
 
@@ -127,12 +140,24 @@ main button{
     
 }
 
+#logosFooter {
 
+display:flex;
+gap:1rem;
+padding-right: 5rem;
+
+}
 
 
 
 #logosFooter img {
-    width: 50px;
+    height: 2rem;
+    width: 2rem;
+    transition: transform .2s;
+}
+
+#logosFooter img:hover {
+    transform: scale(1.2)
 
 }
 
@@ -140,9 +165,14 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   height: 5vh;
+   height: 10vh;
     width: 100%;
     background-color: #ddc1a7;
+}
+
+footer p {
+
+    padding-left: 5rem;
 }
 
 #parrafoOculto1, #parrafoOculto2, #parrafoOculto3, #parrafoOculto4 {color:green;}
