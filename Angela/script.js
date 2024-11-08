@@ -18,7 +18,7 @@ ejecutarSlider();
 
 const artista1 = document.querySelectorAll(".artista1");
 artista1.addEventListener('mouseover', () => {
-    artista1.innerHTML('selena') = ('Selena Gomez');
+    artista1.innerHTML = 'Selena Gomez';
 
 }
 );
