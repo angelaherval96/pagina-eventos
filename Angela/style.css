@@ -21,7 +21,8 @@ header {
 
 
 .logo img {
-    width: 200px;
+    width: 9rem;
+    height: 5rem;
 
 }
 nav {
@@ -41,7 +42,7 @@ a:hover{
     margin-top: -5px;
 }
 main{
-    height: 80vh;
+    /* height: 80vh; */
 }
 .background{
     width: 100%;
@@ -61,8 +62,15 @@ main{
     justify-content: center;
     align-items: center; 
     background-color: #ddc1a7;
+    padding: 20px;
+    gap: 20px;
+    
     
 }
+.artista:hover{
+    opacity: 50%; 
+}
+
 .slider.active{
     display: flex;
 }
@@ -74,6 +82,28 @@ main{
     overflow: hidden;
     
 } */
+
+.conciertos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #ddc1a7;
+    padding: 20px;
+    gap: 20px;
+}
+.proximosConciertos{
+    display: flex;
+    gap: 20px;
+}
+.conciertosPop{
+    display: flex;
+    gap: 20px;
+}
+.conciertosRock{
+    display: flex;
+    gap: 20px;
+}
 footer{
     height: 10vh;
 }
