@@ -123,3 +123,21 @@ footer{
     background-color: #ddc1a7;
 }
 
+.mensajeinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mensaje1, #mensaje2, #mensaje3, #mensaje4, #mensaje5, #mensaje6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    background-color: #5b4f47;
+    border-radius: 10%;
+    color: white;
+    padding: 20px;
+}

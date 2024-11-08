@@ -11,16 +11,24 @@
 <body>
   <header>
     <div class="logo">
-      <img src="../resources/Inicio.png" />
+      <img src="../Felipe/resources/Laravellum.png" />
     </div>
     <nav id="nav">
-      <a href="#">Conciertos</a>
-      <a href="#">Teatro</a>
-      <a href="#">Convenciones</a>
-      <a href="#">Algo</a>
+      <a href="../index.html">Portada</a>
+      <a href="../Angela/index.html">Conciertos</a>
+      <a href="../Felipe/index.html">Teatro</a>
+      <a href="../Jaime/index.html">Convenciones</a>
+      <a href="../Nicklas/index.html">Eventos Deportivos</a>
     </nav>
   </header>
-
+  <mensajeInfo>
+    <p id="mensaje1"></p>
+    <p id="mensaje2"></p>
+    <p id="mensaje3"></p>
+    <p id="mensaje4"></p>
+    <p id="mensaje5"></p>
+    <p id="mensaje6"></p>
+  </mensajeInfo>
   <main>
     <div class="events">
       <div class="cardEvent">
@@ -29,7 +37,7 @@
         <img src="./resources/icono-evento.jpg" class="iconoEvento" />
         <div class="buttons">
           <button id="evento1Agenda" onclick="reservar('agendaId','reservación exitosa')">reservar</button>
-          <button onclick="info()">+ info</button>
+          <button id="info1" onclick="info('1')">+ info</button>
         </div>
         <p id="agendaId"></p>
       </div>
@@ -38,8 +46,8 @@
         <p>Del 6 al 10 de diciembre</p>
         <img src="./resources/icono-evento.jpg" class="iconoEvento" />
         <div class="buttons">
-          <button id="evento2Agenda" onclick="reservar('agenda2')">reservar</button>
-          <button onclick="info()">+ info</button>
+          <button id="evento2Agenda" onclick="reservar('agenda2','reservación exitosa')">reservar</button>
+          <button id="info2" onclick="info('2')">+ info</button>
         </div>
         <p id="agenda2"></p>
       </div>
@@ -48,18 +56,18 @@
         <p>Del 6 al 10 de diciembre</p>
         <img src="./resources/icono-evento.jpg" class="iconoEvento" />
         <div class="buttons">
-          <button id="evento3Agenda">reservar</button>
-          <button onclick="info()">+ info</button>
+          <button id="evento3Agenda" onclick="reservar('agenda3','reservación exitosa')">reservar</button>
+          <button id="info3" onclick="info('3')">+ info</button>
         </div>
         <p id="agenda3"></p>
       </div>
       <div class="cardEvent">
-        <h2>RLa Divina Comedia</h2>
+        <h2>La Divina Comedia</h2>
         <p>Del 6 al 10 de enero</p>
         <img src="./resources/icono-evento.jpg" class="iconoEvento" />
         <div class="buttons">
-          <button id="evento4Agenda">reservar</button>
-          <button onclick="info()">+ info</button>
+          <button id="evento4Agenda" onclick="reservar('agenda4','reservación exitosa')">reservar</button>
+          <button id="info4" onclick="info('4')">+ info</button>
         </div>
         <p id="agenda4"></p>
       </div>
@@ -68,8 +76,8 @@
         <p>Del 6 al 10 de febrero</p>
         <img src="./resources/icono-evento.jpg" class="iconoEvento" />
         <div class="buttons">
-          <button id="evento5Agenda">reservar</button>
-          <button onclick="info()">+ info</button>
+          <button id="evento5Agenda" onclick="reservar('agenda5','reservación exitosa')">reservar</button>
+          <button id="info5" onclick="info('5')">+ info</button>
         </div>
         <p id="agenda5"></p>
       </div>
@@ -78,8 +86,8 @@
         <p>Del 6 al 10 de marzo</p>
         <img src="./resources/icono-evento.jpg" class="iconoEvento" />
         <div class="buttons">
-          <button id="evento6Agenda">reservar</button>
-          <button onclick="info()">+ info</button>
+          <button id="evento6Agenda" onclick="reservar('agenda6','reservación exitosa')">reservar</button>
+          <button id="info6" onclick="info('6')">+ info</button>
         </div>
         <p id="agenda6"></p>
       </div>
@@ -98,13 +106,7 @@
     </div>
   </footer>
 
-  <script>
-    function reservar(agendaId, mensaje) {
-      document.getElementById(agendaId).textContent = mensaje;
-    }
-    
-
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
