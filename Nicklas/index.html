@@ -32,7 +32,13 @@
         
         <div class="grid-container">
             <div class="item">
-                <div class="titulo">Fútbol</div>
+                <video class="videos active" src="/Nicklas/resources/football1.mp4" autoplay muted loop></video>
+                <video class="videos" src="/Nicklas/resources/football2.mp4" autoplay muted loop></video>
+                <video class="videos" src="/Nicklas/resources/football3.mp4" autoplay muted loop></video>
+                <div class="botones">
+                    <p onclick="previoVideo()" class="boton"><-</p>
+                    <p onclick="siguienteVideo()" class="boton">-></p>
+                </div>
             </div>
             <div class="itemScroll">
                 <div class="subtitulo">
@@ -144,7 +150,7 @@
                 </div>
             </div>
         </div>
-
+        <script src="script.js"></script>
     </main>
     <footer>
         <p>Copyright 2024 Equipo Laravellum</p>
