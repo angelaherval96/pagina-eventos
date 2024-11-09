@@ -35,58 +35,77 @@
         <section class="artistas">
             <h1>Artistas más populares</h1>
             <div class="slider active">
-                <div class="artista1 artista active">
-                    <img src="/Angela/img/violin-8405558_640.jpg" alt="artista1">
+                <div class="artista1 artista active" data-nombre="Selena Gómez">
+                    <img src="/Angela/img/cantantes/selenaGomez.jpg" alt="Selena Gómez">
 
-                    <p id="selena"></p>
+                    <p class="nombreCantante"></p>
                     
                 </div>
-                <div class="artista2 artista">
-                    <img src="/Angela/img/artist-playing-guitar-smoke-effect.jpg" alt="artista2">
+                <div class="artista2 artista" data-nombre="Beret">
+                    <img src="/Angela/img/cantantes/beret.jpg" alt="Beret">
+                    <p class="nombreCantante"></p>
                 </div>
-                <div class="artista3 artista">
+                
+                <div class="artista3 artista" data-nombre="Feid">
 
-                    <img src="/Angela/img/close-up-flamenco-woman-dancer.jpg" alt="artista3">
+                    <img src="/Angela/img/cantantes/ferxxo.jpg" alt="Feid">
+                    <p class="nombreCantante"></p>
+                </div> 
+
+                <div class="artista4 artista" data-nombre="Taylor Swift">
+
+                    <img src="/Angela/img/cantantes/taylorSwift.jpg" alt="Taylor Swift">
+                    <p class="nombreCantante"></p>
                 </div> 
             </div>
             <div class="slider">
 
-                <div class="artista4 artista">
-                    <img src="/Angela/img/caucasian-female-singer.jpg" alt="artista4">
-                </div> 
-                <div class="artista5 artista">
-                    <img src="/Angela/img/singer-with-microphone-singing-studio.jpg" alt="artista5">
-                </div> 
-                <div class="artista6 artista">
+                <div class="artista5 artista" data-nombre="Bad Bunny">
+                    <img src="/Angela/img/cantantes/badBunny.jpg" alt="Bad Bunny">
 
-                    <img src="/Angela/img/artist-singing-stage-smoke-effect.jpg" alt="artista6">
-                </div> 
-            </div>
-            <div class="slider">
-
-                <div class="artista7 artista">
-                    <img src="/Angela/img/violin-8405558_640.jpg" alt="artista1">
+                    <p class="nombreCantante"></p>
                     
                 </div>
-                <div class="artista8 artista">
-                    <img src="/Angela/img/artist-playing-guitar-smoke-effect.jpg" alt="artista2">
+                <div class="artista6 artista" data-nombre="Beyonce">
+                    <img src="/Angela/img/cantantes/beyonce.jpg" alt="Beyonce">
+                    <p class="nombreCantante"></p>
                 </div>
-                <div class="artista9 artista">
+                
+                <div class="artista7 artista" data-nombre="David Bisbal">
 
-                    <img src="/Angela/img/close-up-flamenco-woman-dancer.jpg" alt="artista3">
+                    <img src="/Angela/img/cantantes/davidBisbal.jpg" alt="David Bisbal">
+                    <p class="nombreCantante"></p>
+                </div> 
+
+                <div class="artista8 artista" data-nombre="Drake">
+
+                    <img src="/Angela/img/cantantes/drake.jpg" alt="Drake">
+                    <p class="nombreCantante"></p>
                 </div> 
             </div>
             <div class="slider">
 
-                <div class="artista10 artista">
-                    <img src="/Angela/img/caucasian-female-singer.jpg" alt="artista4">
-                </div> 
-                <div class="artista11 artista">
-                    <img src="/Angela/img/singer-with-microphone-singing-studio.jpg" alt="artista5">
-                </div> 
-                <div class="artista12 artista">
+                <div class="artista9 artista" data-nombre="Lola Indigo">
+                    <img src="/Angela/img/cantantes/lolaIndigo.jpg" alt="Lola Indigo">
 
-                    <img src="/Angela/img/artist-singing-stage-smoke-effect.jpg" alt="artista6">
+                    <p class="nombreCantante"></p>
+                    
+                </div>
+                <div class="artista10 artista" data-nombre="Karol G">
+                    <img src="/Angela/img/cantantes/karolg.jpg" alt="Karol G">
+                    <p class="nombreCantante"></p>
+                </div>
+                
+                <div class="artista11 artista" data-nombre="Shakira">
+
+                    <img src="/Angela/img/cantantes/shakira.jpg" alt="Shakira">
+                    <p class="nombreCantante"></p>
+                </div> 
+
+                <div class="artista12 artista" data-nombre="The Weeknd">
+
+                    <img src="/Angela/img/cantantes/theWeeknd.jpg" alt="The Weekend">
+                    <p class="nombreCantante"></p>
                 </div> 
             </div>
             
@@ -95,14 +114,52 @@
             <h1>Próximos Conciertos</h1>
 
             <div class="proximosConciertos">
-                <div>
-                    <img src="/Angela/img/violin-8405558_640.jpg" alt="concierto1">
+                <div class="proximoConcierto concierto">
+                    <img src="/Angela/img/conciertos/cDavidBisbal.jpg" alt="Concierto David Bisbal">
+                    <p class="autor">David Bisbal</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra1')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra1"></p>
                 </div>
-                <div>
-                    <img src="/Angela/img/artist-playing-guitar-smoke-effect.jpg" alt="concierto2">
+                <div class="proximoConcierto concierto">
+                    <img src="/Angela/img/conciertos/cKarolG.jpg" alt="Concierto KarolG">
+                    <p class="autor">Karol G</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra2')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra2"></p>
                 </div>
-                <div>
-                    <img src="/Angela/img/close-up-flamenco-woman-dancer.jpg" alt="concierto3">
+                <div class="proximoConcierto concierto">
+                    <img src="/Angela/img/conciertos/cFeid.jpg" alt="Concierto Feid">
+                    <p class="autor">Feid</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra3')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra3"></p>
+                           
+                    
+                    
+                </div> 
+                <div class="proximoConcierto concierto">
+                    <img src="/Angela/img/conciertos/cShakira.jpg" alt="Concierto Shakira">
+                    <p class="autor">Shakira</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra4')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra4"></p>
                 </div> 
             </div>
             
@@ -110,31 +167,100 @@
         <section class="conciertos">
             <h1>Conciertos Pop</h1>
             <div class="conciertosPop">
-                <div>
-                    <img src="/Angela/img/violin-8405558_640.jpg" alt="concierto1">
-                    
+                <div class="conciertoPop concierto">
+                    <img src="/Angela/img/conciertos/cDavidBisbal.jpg" alt="Concierto David Bisbal">
+    
+                    <p class="autor">David Bisbal</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra5')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra5"></p>
                 </div>
-                <div>
-                    <img src="/Angela/img/artist-playing-guitar-smoke-effect.jpg" alt="concierto2">
+                <div class="conciertoPop concierto">
+                    <img src="/Angela/img/conciertos/cPabloLopez.jpg" alt="Concierto Pablo López">
+                    <p class="autor">Pablo López</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra6')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra6"></p>
                 </div>
-                <div>
-                    <img src="/Angela/img/close-up-flamenco-woman-dancer.jpg" alt="concierto3">
+                <div class="conciertoPop concierto">
+                    <img src="/Angela/img/conciertos/cShakira.jpg" alt="Concierto Shakira">
+                    <p class="autor">Shakira</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra7')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra7"></p>
+                </div> 
+                <div class="conciertoPop concierto">
+                    <img src="/Angela/img/conciertos/cTaylorSwift.jpg" alt="Concierto Taylor Swift">
+                    <p class="autor">Taylor Swift</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra8')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra8"></p>
                 </div> 
             </div>
             
         </section>
         <section class=" conciertos">
-            <h1>Conciertos Rock</h1>
-            <div class="conciertosRock">
-                <div>
-                    <img src="/Angela/img/violin-8405558_640.jpg" alt="concierto1">
-                    
+            <h1>Conciertos Música Urbana</h1>
+            <div class="conciertosMusicaUrbana">
+                <div class="conciertoUrbana concierto">
+                    <img src="/Angela/img/conciertos/cFeid.jpg" alt="Concierto Feid">
+                    <p class="autor">Feid</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra9')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra9"></p>
                 </div>
-                <div>
-                    <img src="/Angela/img/artist-playing-guitar-smoke-effect.jpg" alt="concierto2">
+                <div class="conciertoUrbana concierto">
+                    <img src="/Angela/img/conciertos/cKarolG.jpg" alt="Concierto Karol G">
+                    <p class="autor">Karol G</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra10')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra10"></p>
                 </div>
-                <div>
-                    <img src="/Angela/img/close-up-flamenco-woman-dancer.jpg" alt="concierto3">
+                <div class="conciertoUrbana concierto">
+                    <img src="/Angela/img/conciertos/cMaluma.jpg" alt="Concierto Maluma">
+                    <p class="autor">Maluma</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra11')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra11"></p>
+                </div> 
+                <div class="conciertoUrbana concierto">
+                    <img src="/Angela/img/conciertos/cLola.jpg" alt="Concierto Lola Indigo">
+                    <p class="autor">Lola Indigo</p>
+                    <p class="ciudad">Málaga</p>
+                    <p class="fecha">12/12/24</p>
+                    <p class="precio">Desde 25€</p>
+                    <div class="boton">
+                        <button onclick="compraRealizada('compra12')" type="submit">Comprar Entradas</button>
+                    </div>
+                    <p class="compra" id="compra12"></p>
                 </div> 
             </div>
             
@@ -148,10 +274,21 @@
 
         <div id="logosFooter">
 
-            <img src="/resources/Inicio.png">
-            <img src="/resources/Inicio.png">
-            <img src="/resources/Inicio.png">
-            <img src="/resources/Inicio.png">
+            <a href="https://acortar.link/73IW07">
+                <img src="/resources/linkedin.png">
+            </a>
+            
+            <a href="https://x.com/?lang=es">
+                <img src="/resources/x.png">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="/resources/insta.png">
+            </a>
+            
+            <a href="https://acortar.link/jH2c9W">
+                <img src="/resources/facebook.png">    
+            </a>
+            
 
         </div>
     </footer>
