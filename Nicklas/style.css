@@ -10,6 +10,8 @@ header {
     align-items: center;
     background-color: #5b4f47;
     color: white;
+    height: 10vh;
+
 }
 
 .logo {
@@ -19,7 +21,8 @@ header {
 }
 
 .logo img {
-    width: 200px;
+    width: 9rem;
+    height: 5rem;
 }
 
 nav {
@@ -28,12 +31,19 @@ nav {
     width: 70%;
 }
 
-a {
-    color: white;
+header a{
+
+    color:white;
     text-decoration: none;
     text-transform: uppercase;
 }
 
+header a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+
+
+}
 main {
     display: flex;
     max-height: 2000px;
