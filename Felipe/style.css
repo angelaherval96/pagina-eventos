@@ -74,14 +74,11 @@ main{
     border-radius: 10px;
 }
 
-
-
 .cardEvent img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-
 
 .cardEvent:hover{
     background-color: #5b4f47;
@@ -90,7 +87,6 @@ main{
     scale: 1.1;
     background: linear-gradient(135deg, #5b4f47a7, #ddc1a7b1);
 }
-
 
 button{
     background-color: #5b4f47;
@@ -107,12 +103,10 @@ button:hover{
     transition: 0.5s;
 }
 
-
 #logosFooter img {
     width: 50px;
 
 }
-
 
 footer{
     display: flex;
@@ -129,6 +123,8 @@ footer{
     align-items: center;
 }
 
+
+
 #mensaje1, #mensaje2, #mensaje3, #mensaje4, #mensaje5, #mensaje6{
     display: flex;
     justify-content: center;
@@ -139,5 +135,7 @@ footer{
     background-color: #5b4f47;
     border-radius: 10%;
     color: white;
-    padding: 20px;
+    padding: 50px 20px;
 }
+
+
