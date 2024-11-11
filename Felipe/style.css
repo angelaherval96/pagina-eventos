@@ -76,8 +76,8 @@ header a:hover{
         align-items: center;
         background-color: #5b4f47;
         color: white;
-        height: 10vh;
-        width: 100%;
+        height: 14vh;
+      
         padding: 0 20px;
         
     }
@@ -134,16 +134,11 @@ main{
     border: 1px solid rgba(255, 255, 255, 0.223);
 }
 
-
-
-
-
 .cardEvent img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-
 
 .cardEvent:hover{
     background-color: #5b4f47;
@@ -152,7 +147,6 @@ main{
     scale: 1.1;
     background: linear-gradient(135deg, #5b4f47a7, #ddc1a7b1);
 }
-
 
 button{
     background-color: #5b4f47;
@@ -169,12 +163,10 @@ button:hover{
     transition: 0.5s;
 }
 
-
 #logosFooter img {
     width: 50px;
 
 }
-
 
 footer{
     display: flex;
@@ -186,22 +178,44 @@ footer{
 }
 
 .mensajeinfo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#mensaje1, #mensaje2, #mensaje3, #mensaje4, #mensaje5, #mensaje6{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 80%;
+    z-index: 1000;
+}
+
+#mensaje1, #mensaje2, #mensaje3, #mensaje4, #mensaje5, #mensaje6 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
     top: 50%;
-    background-color: #5b4f47;
-    border-radius: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #5b4f47fe, #ddc1a7);
+    border-radius: 3%;
     color: white;
-    padding: 20px;
+    padding: 100px 50px;
+    z-index: 1000; /
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: #5b4f47;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: #5b4f47;
+    color: white;
 }
 
 #logosFooter {
