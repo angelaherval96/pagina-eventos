@@ -39,11 +39,63 @@ header a{
 }
 
 header a:hover{
-    transform: scale(1.1);
-    text-decoration: underline;
-
-
+    color: #ddc1a7; 
+    margin-top: -5px;
 }
+
+.burger {
+    width: 35px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        color: white;
+    }
+
+    #nav {
+        position: fixed;
+        right: -800px;
+        flex-direction: column;
+        top: 80px;
+        transition: all 0.5s;
+        gap: 30px;
+        padding: 50px;
+        border-radius: 10px;
+        z-index: 5;
+    }
+
+    #nav.activo {
+        right: 0;
+        background-color: #5b4f47;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #5b4f47;
+        color: white;
+        height: 10vh;
+        width: 100%;
+        padding: 0 20px;
+        
+    }
+
+    header a:hover{
+        transform: scale(1.1);
+        text-decoration: underline;
+        margin: 0;
+    }
+
+    .logo {
+        width: auto;
+    }
+}
+
 
 main {
     display: flex;
@@ -69,9 +121,7 @@ main {
 
 #logosFooter img:hover {
     transform: scale(1.2)
-
 }
-
 
 footer{
     display: flex;
@@ -122,7 +172,7 @@ footer p {
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
         width: 90%;
@@ -132,6 +182,10 @@ footer p {
     .grid-container2 {
         grid-template-columns: 1fr;
         width: 90%;
+    }
+
+    .itemScroll {
+        overflow-y: scroll;
     }
 }
 
@@ -153,12 +207,6 @@ footer p {
     padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .itemScroll {
-        overflow-y: scroll;
-    }
-}
-
 .eventoIndividual {
     font-size: 17px;
 }
@@ -169,8 +217,8 @@ footer p {
     align-items: center;
     text-align: center;
     font-weight: bold;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
     padding: 20px;
     font-size: 25px;
 }

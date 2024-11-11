@@ -45,3 +45,8 @@ function previoVideoF1() {
     indexF1 = (indexF1 + 2) % slidesF1.length;
     slidesF1[indexF1].classList.add("active");
 }
+
+function mostrar() {
+    let nav = document.querySelector('#nav');
+    nav.classList.toggle("activo");
+}
