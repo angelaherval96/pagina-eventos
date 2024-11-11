@@ -44,27 +44,48 @@ header a:hover{
 
 
 }
+
 main {
     display: flex;
-    max-height: 2000px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #f8f7f4;
 }
 
+#logosFooter {
+
+    display:flex;
+    gap:1rem;
+    padding-right: 5rem;
+    
+    }
+
 #logosFooter img {
-    width: 50px;
+    height: 2rem;
+    width: 2rem;
+    transition: transform .2s;
+}
+
+#logosFooter img:hover {
+    transform: scale(1.2)
 
 }
 
-footer {
+
+footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10vh;
     width: 100%;
     background-color: #ddc1a7;
+
+}
+
+footer p {
+
+    padding-left: 5rem;
 }
 
 .slider {
@@ -101,6 +122,19 @@ footer {
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        width: 90%;
+        height: 800px;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+}
+
 .item {
     display: flex;
     justify-content: center;
@@ -117,7 +151,12 @@ footer {
     overflow-y: scroll;
     border-radius: 10px;
     padding: 10px;
+}
 
+@media screen and (max-width: 768px) {
+    .itemScroll {
+        overflow-y: scroll;
+    }
 }
 
 .eventoIndividual {
@@ -289,4 +328,11 @@ footer {
 
 .boton:hover {
     transform: scale(2);
+}
+
+.linea{
+    border: 1px solid black;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
