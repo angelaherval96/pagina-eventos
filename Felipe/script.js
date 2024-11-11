@@ -24,3 +24,11 @@ function reservar(agendaId, mensaje) {
             document.getElementById("mensaje6").textContent = "La Ilíada es un poema de género épico que trata el asedio de la ciudad de Troya por los griegos para rescatar a Helena, esposa del rey Menelao, la cual fue raptada por Paris, príncipe troyano. Después de este hecho, se origina una guerra entre griegos y troyanos.";
         }
     }
+
+
+// Nick
+
+function mostrar() {
+    let nav = document.querySelector('#nav');
+    nav.classList.toggle("activo");
+}
