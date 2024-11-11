@@ -20,14 +20,32 @@
       <a href="../Nicklas/index.html">Eventos Deportivos</a>
     </nav>
   </header>
-  <mensajeInfo>
-    <p id="mensaje1"></p>
-    <p id="mensaje2"></p>
-    <p id="mensaje3"></p>
-    <p id="mensaje4"></p>
-    <p id="mensaje5"></p>
-    <p id="mensaje6"></p>
-  </mensajeInfo>
+ 
+  <div id="mensaje1" class="mensajeinfo">
+    <button class="close-btn" onclick="cerrarMensaje('mensaje1')">Cerrar</button>
+    <p>El pianista de Cincinnati Fred Hersch abrirá el sábado 2 de noviembre la nueva edición de este encuentro musical organizado por el Ayuntamiento de Málaga a través de Málaga Procultura, que continuará con una breve pero significativa exposición de lo mejor del género facturado en nuestras latitudes, primero con Carles Benavent, Tino di Geraldo y Jorge Pardo en El concierto de Málaga y después con el espectáculo La edad de oro del jazz español, una reunión en escena de diez de nuestros mejores solistas.</p>
+  </div>
+  <div id="mensaje2" class="mensajeinfo">
+    <button class="close-btn" onclick="cerrarMensaje('mensaje2')">Cerrar</button>
+    <p>Hamlet es una tragedia de venganza. El espíritu de su padre le pide al joven príncipe de Dinamarca que vengue el asesinato que su propio hermano perpetró contra él. Sin embargo, en la obra de Shakespeare, no destaca la realización de la venganza, sino que el conflicto interno del héroe tiene prioridad.</p>
+  </div>
+  <div id="mensaje3" class="mensajeinfo">
+    <button class="close-btn" onclick="cerrarMensaje('mensaje3')">Cerrar</button>
+    <p>Shakespeare dice que la muerte es el fin de todo y que Romeo y Julieta murieron abrazados en el mausoleo de Verona. Ahora, 400 años después, os vamos a demostrar que Shakespeare se equivocó: Ana Belén y José Luis nos van a contar la verdadera historia de este amor prohibido.</p>
+  </div>
+  <div id="mensaje4" class="mensajeinfo">
+    <button class="close-btn" onclick="cerrarMensaje('mensaje4')">Cerrar</button>
+    <p>Es una obra humana que refleja el peregrinaje del ser humano en busca de “la Luz”, es el descubrimiento del hombre hacia Dios, con la ayuda de la razón (Virgilio) y de la fe (Beatriz). El poema es una epopeya religiosa que narra con realismo un viaje, es un canto a la humanidad.</p>
+  </div>
+  <div id="mensaje5" class="mensajeinfo">
+    <button class="close-btn" onclick="cerrarMensaje('mensaje5')">Cerrar</button>
+    <p>La Odisea narra la historia del héroe griego Odiseo, Ulises, el viaje de regreso a su reino de Ítaca donde le esperan su esposa Penélope, rodeada de pretendiente, y su hijo Telémaco. Un trayecto de aproximadamente un mes de navegación que se alarga aproximadamente diez años, los mismos que duró la guerra de Troya.</p>
+  </div>
+  <div id="mensaje6" class="mensajeinfo">
+    <button class="close-btn" onclick="cerrarMensaje('mensaje6')">Cerrar</button>
+    <p>La Ilíada es un poema de género épico que trata el asedio de la ciudad de Troya por los griegos para rescatar a Helena, esposa del rey Menelao, la cual fue raptada por Paris, príncipe troyano. Después de este hecho, se origina una guerra entre griegos y troyanos.</p>
+  </div>
+  
   <main>
     <div class="events">
       <div class="cardEvent">
@@ -91,7 +109,6 @@
         <p id="agenda6"></p>
       </div>
     </div>
-
   </main>
 
   <footer>
@@ -102,7 +119,7 @@
         <img src="../resources/insta.png">
         <img src="../resources/facebook.png">
     </div>
-</footer>
+  </footer>
 
   <script src="script.js"></script>
 </body>
