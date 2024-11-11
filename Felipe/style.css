@@ -67,12 +67,16 @@ main{
     min-width: 250px;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #f8f7f4e7;
-    color: #5b4f47;
+    background-color: #f8f7f455;
+    color: #f3eae4;
     padding: 10px;
     gap: 10px;
     border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.223);
 }
+
+
 
 
 
@@ -140,4 +144,38 @@ footer{
     border-radius: 10%;
     color: white;
     padding: 20px;
+}
+
+#logosFooter {
+
+    display:flex;
+    gap:1rem;
+    padding-right: 5rem;
+    
+    }
+
+#logosFooter img {
+    height: 2rem;
+    width: 2rem;
+    transition: transform .2s;
+}
+
+#logosFooter img:hover {
+    transform: scale(1.2)
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #ddc1a7;
+
+}
+
+footer p {
+
+    padding-left: 5rem;
 }
