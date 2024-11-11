@@ -31,3 +31,10 @@ function inscrito4() {
 
 }
 
+
+// Nick
+
+function mostrar() {
+    let nav = document.querySelector('#nav');
+    nav.classList.toggle("activo");
+}

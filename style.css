@@ -51,10 +51,61 @@ header a{
 
 
 header a:hover{
-    transform: scale(1.1);
-    text-decoration: underline;
+    color: #ddc1a7; 
+    margin-top: -5px;
+}
 
+.burger {
+    width: 35px;
+    display: none;
+}
 
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        color: white;
+    }
+
+    #nav {
+        position: fixed;
+        right: -800px;
+        flex-direction: column;
+        top: 80px;
+        transition: all 0.5s;
+        gap: 30px;
+        padding: 50px;
+        border-radius: 10px;
+        z-index: 5;
+    }
+
+    #nav.activo {
+        right: 0;
+        background-color: #5b4f47;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #5b4f47;
+        color: white;
+        height: 10vh;
+        width: 100%;
+        padding: 0 20px;
+        
+    }
+
+    header a:hover{
+        transform: scale(1.1);
+        text-decoration: underline;
+        margin: 0;
+    }
+
+    .logo {
+        width: auto;
+    }
 }
 
 main{

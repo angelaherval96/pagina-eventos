@@ -13,7 +13,6 @@ function cerrarMensaje(mensajeId) {
     document.getElementById(mensajeId).style.display = 'none';
 }
 
-
 function mostrar() {
     let nav = document.querySelector('#nav');
     nav.classList.toggle("activo");
