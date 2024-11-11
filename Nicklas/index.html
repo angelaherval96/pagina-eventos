@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos Deportivos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="/resources/Inicio.png">
+            <img src="/resources/Laravellum.png">
         </div>
         <nav id="nav">
-
-
-            <a href="#">Conciertos</a>
-            <a href="#">Teatro</a>
-            <a href="#">Convenciones</a>
-            <a href="#">Eventos Deportivos</a>
+            <a href="/index.html">Portada</a>
+            <a href="/Angela/index.html">Conciertos</a>
+            <a href="/Felipe/index.html">Teatro</a>
+            <a href="/Jaime/index.html">Convenciones</a>
+            <a href="/Nicklas/index.html">Eventos Deportivos</a>
 
         </nav>
 
@@ -25,14 +26,22 @@
     <main>
         <div class="intro">
             <h1>Eventos Deportivos</h1>
-            <p>Los eventos deportivos son una de las actividades más emocionantes y populares en todo el mundo. 
-                En esta sección, te mantendremos informado sobre los próximos acontecimientos deportivos más importantes. 
-                Desde los partidos de fútbol más esperados, pasando por emocionantes encuentros de baloncesto, hasta las carreras más intensas, aquí encontrarás toda la información que necesitas.</p>
+            <p>Los eventos deportivos son una de las actividades más emocionantes y populares en todo el mundo.
+                En esta sección, te mantendremos informado sobre los próximos acontecimientos deportivos más
+                importantes.
+                Desde los partidos de fútbol más esperados, pasando por emocionantes encuentros de baloncesto, hasta las
+                carreras más intensas, aquí encontrarás toda la información que necesitas.</p>
         </div>
-        
+
         <div class="grid-container">
             <div class="item">
-                <div class="titulo">Fútbol</div>
+                <video class="videosFut active" src="/Nicklas/resources/football1.mp4" autoplay muted loop></video>
+                <video class="videosFut" src="/Nicklas/resources/football2.mp4" autoplay muted loop></video>
+                <video class="videosFut" src="/Nicklas/resources/football3.mp4" autoplay muted loop></video>
+                <div class="botones">
+                    <p onclick="previoVideoFut()" class="boton">←</p>
+                    <p onclick="siguienteVideoFut()" class="boton">→</p>
+                </div>
             </div>
             <div class="itemScroll">
                 <div class="subtitulo">
@@ -41,7 +50,8 @@
                     <img class="football" src="/Nicklas/resources/football.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Real Madrid vs. Valencia: 8 de noviembre de 2024 en el Estadio Santiago Bernabéu.</p>
+                    <p class="eventoIndividual">- Real Madrid vs. Valencia: 8 de noviembre de 2024 en el Estadio
+                        Santiago Bernabéu.</p>
                     <p class="eventoIndividual">- Barcelona vs. Sevilla: 10 de noviembre de 2024 en el Camp Nou.</p>
                 </div>
                 <div class="subtitulo">
@@ -51,15 +61,17 @@
                 </div>
                 <div class="evento">
                     <p class="eventoIndividual">- Barcelona vs. Porto: 12 de noviembre de 2024 en el Camp Nou.</p>
-                    <p class="eventoIndividual">- Manchester City vs. PSG: 13 de noviembre de 2024 en el Etihad Stadium.</p>
+                    <p class="eventoIndividual">- Manchester City vs. PSG: 13 de noviembre de 2024 en el Etihad Stadium.
+                    </p>
                 </div>
                 <div class="subtitulo">
                     <img class="PLogo" src="/Nicklas/resources/PL.png" alt="">
                     Premier League
-                    <img class="football" src="/Nicklas/resources/football.png" alt="">    
+                    <img class="football" src="/Nicklas/resources/football.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Liverpool vs. Manchester United: 11 de noviembre de 2024 en Anfield.</p>
+                    <p class="eventoIndividual">- Liverpool vs. Manchester United: 11 de noviembre de 2024 en Anfield.
+                    </p>
                     <p class="eventoIndividual">- Chelsea vs. Arsenal: 12 de noviembre de 2024 en Stamford Bridge.</p>
                 </div>
                 <div class="subtitulo">
@@ -68,12 +80,13 @@
                     <img class="football" src="/Nicklas/resources/football.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Juventus vs. Inter de Milán: 10 de noviembre de 2024 en el Allianz Stadium.</p>
+                    <p class="eventoIndividual">- Juventus vs. Inter de Milán: 10 de noviembre de 2024 en el Allianz
+                        Stadium.</p>
                     <p class="eventoIndividual">- AC Milan vs. Napoli: 11 de noviembre de 2024 en San Siro.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="grid-container2">
             <div class="itemScroll">
                 <div class="subtitulo">
@@ -82,8 +95,10 @@
                     <img class="basketball" src="/Nicklas/resources/basketball.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Los Angeles Lakers vs. Golden State Warriors: 7 de noviembre de 2024 en el Crypto.com Arena.</p>
-                    <p class="eventoIndividual">- Boston Celtics vs. Miami Heat: 9 de noviembre de 2024 en el TD Garden.</p>
+                    <p class="eventoIndividual">- Los Angeles Lakers vs. Golden State Warriors: 7 de noviembre de 2024
+                        en el Crypto.com Arena.</p>
+                    <p class="eventoIndividual">- Boston Celtics vs. Miami Heat: 9 de noviembre de 2024 en el TD Garden.
+                    </p>
                 </div>
                 <div class="subtitulo">
                     <img class="EuroLigaLogo" src="/Nicklas/resources/euroliga.png" alt="">
@@ -91,8 +106,10 @@
                     <img class="basketball" src="/Nicklas/resources/basketball.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Real Madrid vs. Anadolu Efes: 9 de noviembre de 2024 en el WiZink Center.</p>
-                    <p class="eventoIndividual">- FC Barcelona vs. CSKA Moscú: 10 de noviembre de 2024 en el Palau Blaugrana.</p>
+                    <p class="eventoIndividual">- Real Madrid vs. Anadolu Efes: 9 de noviembre de 2024 en el WiZink
+                        Center.</p>
+                    <p class="eventoIndividual">- FC Barcelona vs. CSKA Moscú: 10 de noviembre de 2024 en el Palau
+                        Blaugrana.</p>
                 </div>
                 <div class="subtitulo">
                     <img class="EndesaLogo" src="/Nicklas/resources/endesa.png" alt="">
@@ -100,8 +117,10 @@
                     <img class="basketball" src="/Nicklas/resources/basketball.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Valencia Basket vs. Unicaja: 11 de noviembre de 2024 en la Fonteta.</p>
-                    <p class="eventoIndividual">- Real Madrid vs. Baskonia: 12 de noviembre de 2024 en el WiZink Center.</p>
+                    <p class="eventoIndividual">- Valencia Basket vs. Unicaja: 11 de noviembre de 2024 en la Fonteta.
+                    </p>
+                    <p class="eventoIndividual">- Real Madrid vs. Baskonia: 12 de noviembre de 2024 en el WiZink Center.
+                    </p>
                 </div>
                 <div class="subtitulo">
                     <img class="WNBALogo" src="/Nicklas/resources/WNBA.png" alt="">
@@ -109,19 +128,32 @@
                     <img class="basketball" src="/Nicklas/resources/basketball.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Las Vegas Aces vs. New York Liberty: 8 de noviembre de 2024 en el Michelob Ultra Arena.</p>
-                    <p class="eventoIndividual">- Chicago Sky vs. Phoenix Mercury: 10 de noviembre de 2024 en el Wintrust Arena.</p>
+                    <p class="eventoIndividual">- Las Vegas Aces vs. New York Liberty: 8 de noviembre de 2024 en el
+                        Michelob Ultra Arena.</p>
+                    <p class="eventoIndividual">- Chicago Sky vs. Phoenix Mercury: 10 de noviembre de 2024 en el
+                        Wintrust Arena.</p>
                 </div>
             </div>
             <div class="item">
-                <div class="titulo"></div>
+                <video class="videosBask active" src="/Nicklas/resources/Basket1.mp4" autoplay muted loop></video>
+                <video class="videosBask" src="/Nicklas/resources/Basket2.mp4" autoplay muted loop></video>
+                <video class="videosBask" src="/Nicklas/resources/Basket3.mp4" autoplay muted loop></video>
+                <div class="botones">
+                    <p onclick="previoVideoBask()" class="boton">←</p>
+                    <p onclick="siguienteVideoBask()" class="boton">→</p>
+                </div>
             </div>
         </div>
 
         <div class="grid-container">
             <div class="item">
-                
-                
+                <video class="videosF1 active" src="/Nicklas/resources/F1.mp4" autoplay muted loop></video>
+                <video class="videosF1" src="/Nicklas/resources/F2.mp4" autoplay muted loop></video>
+                <video class="videosF1" src="/Nicklas/resources/F3.mp4" autoplay muted loop></video>
+                <div class="botones">
+                    <p onclick="previoVideoF1()" class="boton">←</p>
+                    <p onclick="siguienteVideoF1()" class="boton">→</p>
+                </div>
             </div>
             <div class="itemScroll">
                 <div class="subtitulo">
@@ -130,8 +162,10 @@
                     <img class="racecar" src="/Nicklas/resources/racecar.png" alt="">
                 </div>
                 <div class="evento">
-                    <p class="eventoIndividual">- Gran Premio de Las Vegas: 16 de noviembre de 2024 en Las Vegas, Estados Unidos.</p>
-                    <p class="eventoIndividual">- Gran Premio de Abu Dhabi: 24 de noviembre de 2024 en Abu Dhabi, Emiratos Árabes Unidos.</p>
+                    <p class="eventoIndividual">- Gran Premio de Las Vegas: 16 de noviembre de 2024 en Las Vegas,
+                        Estados Unidos.</p>
+                    <p class="eventoIndividual">- Gran Premio de Abu Dhabi: 24 de noviembre de 2024 en Abu Dhabi,
+                        Emiratos Árabes Unidos.</p>
                 </div>
                 <div class="subtitulo">
                     <img class="WECLogo" src="/Nicklas/resources/WEC.png" alt="">
@@ -144,7 +178,7 @@
                 </div>
             </div>
         </div>
-
+        <script src="script.js"></script>
     </main>
     <footer>
         <p>Copyright 2024 Equipo Laravellum</p>
@@ -160,4 +194,5 @@
 
     </footer>
 </body>
+
 </html>
