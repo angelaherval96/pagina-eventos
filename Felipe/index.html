@@ -10,118 +10,119 @@
 <body>
   <header>
     <div class="logo">
-      <img src="../Felipe/resources/Laravellum.png" />
+        <img src="/resources/Laravellum.png">
     </div>
-    <nav id="nav">
-      <a href="../index.html">Portada</a>
-      <a href="../Angela/index.html">Conciertos</a>
-      <a href="../Felipe/index.html">Teatro</a>
-      <a href="../Jaime/index.html">Convenciones</a>
-      <a href="../Nicklas/index.html">Eventos Deportivos</a>
+    <nav id="nav" class="menu">
+        <a href="/index.html">Portada</a>
+        <a href="/Angela/index.html">Conciertos</a>
+        <a href="/Felipe/index.html">Teatro</a>
+        <a href="/Jaime/index.html">Convenciones</a>
+        <a href="/Nicklas/index.html">Eventos Deportivos</a>
     </nav>
-  </header>
- 
-  <div id="mensaje1" class="mensajeinfo">
-    <button class="close-btn" onclick="cerrarMensaje('mensaje1')">Cerrar</button>
-    <p>El pianista de Cincinnati Fred Hersch abrirá el sábado 2 de noviembre la nueva edición de este encuentro musical organizado por el Ayuntamiento de Málaga a través de Málaga Procultura, que continuará con una breve pero significativa exposición de lo mejor del género facturado en nuestras latitudes, primero con Carles Benavent, Tino di Geraldo y Jorge Pardo en El concierto de Málaga y después con el espectáculo La edad de oro del jazz español, una reunión en escena de diez de nuestros mejores solistas.</p>
-  </div>
-  <div id="mensaje2" class="mensajeinfo">
-    <button class="close-btn" onclick="cerrarMensaje('mensaje2')">Cerrar</button>
-    <p>Hamlet es una tragedia de venganza. El espíritu de su padre le pide al joven príncipe de Dinamarca que vengue el asesinato que su propio hermano perpetró contra él. Sin embargo, en la obra de Shakespeare, no destaca la realización de la venganza, sino que el conflicto interno del héroe tiene prioridad.</p>
-  </div>
-  <div id="mensaje3" class="mensajeinfo">
-    <button class="close-btn" onclick="cerrarMensaje('mensaje3')">Cerrar</button>
-    <p>Shakespeare dice que la muerte es el fin de todo y que Romeo y Julieta murieron abrazados en el mausoleo de Verona. Ahora, 400 años después, os vamos a demostrar que Shakespeare se equivocó: Ana Belén y José Luis nos van a contar la verdadera historia de este amor prohibido.</p>
-  </div>
-  <div id="mensaje4" class="mensajeinfo">
-    <button class="close-btn" onclick="cerrarMensaje('mensaje4')">Cerrar</button>
-    <p>Es una obra humana que refleja el peregrinaje del ser humano en busca de “la Luz”, es el descubrimiento del hombre hacia Dios, con la ayuda de la razón (Virgilio) y de la fe (Beatriz). El poema es una epopeya religiosa que narra con realismo un viaje, es un canto a la humanidad.</p>
-  </div>
-  <div id="mensaje5" class="mensajeinfo">
-    <button class="close-btn" onclick="cerrarMensaje('mensaje5')">Cerrar</button>
-    <p>La Odisea narra la historia del héroe griego Odiseo, Ulises, el viaje de regreso a su reino de Ítaca donde le esperan su esposa Penélope, rodeada de pretendiente, y su hijo Telémaco. Un trayecto de aproximadamente un mes de navegación que se alarga aproximadamente diez años, los mismos que duró la guerra de Troya.</p>
-  </div>
-  <div id="mensaje6" class="mensajeinfo">
-    <button class="close-btn" onclick="cerrarMensaje('mensaje6')">Cerrar</button>
-    <p>La Ilíada es un poema de género épico que trata el asedio de la ciudad de Troya por los griegos para rescatar a Helena, esposa del rey Menelao, la cual fue raptada por Paris, príncipe troyano. Después de este hecho, se origina una guerra entre griegos y troyanos.</p>
-  </div>
-  
-  <main>
-    <div class="events">
-      <div class="cardEvent">
-        <h2>Festival de Jazz</h2>
-        <p>Del 1 al 5 de noviembre</p>
-        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
-        <div class="buttons">
-          <button id="evento1Agenda" onclick="reservar('agendaId','reservación exitosa')">reservar</button>
-          <button id="info1" onclick="info('1')">+ info</button>
-        </div>
-        <p id="agendaId"></p>
-      </div>
-      <div class="cardEvent">
-        <h2>Hamlet</h2>
-        <p>Del 6 al 10 de diciembre</p>
-        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
-        <div class="buttons">
-          <button id="evento2Agenda" onclick="reservar('agenda2','reservación exitosa')">reservar</button>
-          <button id="info2" onclick="info('2')">+ info</button>
-        </div>
-        <p id="agenda2"></p>
-      </div>
-      <div class="cardEvent">
-        <h2>Romeo y Julieta</h2>
-        <p>Del 6 al 10 de diciembre</p>
-        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
-        <div class="buttons">
-          <button id="evento3Agenda" onclick="reservar('agenda3','reservación exitosa')">reservar</button>
-          <button id="info3" onclick="info('3')">+ info</button>
-        </div>
-        <p id="agenda3"></p>
-      </div>
-      <div class="cardEvent">
-        <h2>La Divina Comedia</h2>
-        <p>Del 6 al 10 de enero</p>
-        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
-        <div class="buttons">
-          <button id="evento4Agenda" onclick="reservar('agenda4','reservación exitosa')">reservar</button>
-          <button id="info4" onclick="info('4')">+ info</button>
-        </div>
-        <p id="agenda4"></p>
-      </div>
-      <div class="cardEvent">
-        <h2>La Odisea</h2>
-        <p>Del 6 al 10 de febrero</p>
-        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
-        <div class="buttons">
-          <button id="evento5Agenda" onclick="reservar('agenda5','reservación exitosa')">reservar</button>
-          <button id="info5" onclick="info('5')">+ info</button>
-        </div>
-        <p id="agenda5"></p>
-      </div>
-      <div class="cardEvent">
-        <h2>La Iliada</h2>
-        <p>Del 6 al 10 de marzo</p>
-        <img src="./resources/icono-evento.jpg" class="iconoEvento" />
-        <div class="buttons">
-          <button id="evento6Agenda" onclick="reservar('agenda6','reservación exitosa')">reservar</button>
-          <button id="info6" onclick="info('6')">+ info</button>
-        </div>
-        <p id="agenda6"></p>
-      </div>
-    </div>
-  </main>
+    <img onclick="mostrar()" class="burger" src="../Nicklas/resources/barraMenu.png" alt="">
+</header>
+<div id="mensaje1" class="mensajeinfo">
+  <button class="close-btn" onclick="cerrarMensaje('mensaje1')">Cerrar</button>
+  <p>El pianista de Cincinnati Fred Hersch abrirá el sábado 2 de noviembre la nueva edición de este encuentro musical organizado por el Ayuntamiento de Málaga a través de Málaga Procultura, que continuará con una breve pero significativa exposición de lo mejor del género facturado en nuestras latitudes, primero con Carles Benavent, Tino di Geraldo y Jorge Pardo en El concierto de Málaga y después con el espectáculo La edad de oro del jazz español, una reunión en escena de diez de nuestros mejores solistas.</p>
+</div>
+<div id="mensaje2" class="mensajeinfo">
+  <button class="close-btn" onclick="cerrarMensaje('mensaje2')">Cerrar</button>
+  <p>Hamlet es una tragedia de venganza. El espíritu de su padre le pide al joven príncipe de Dinamarca que vengue el asesinato que su propio hermano perpetró contra él. Sin embargo, en la obra de Shakespeare, no destaca la realización de la venganza, sino que el conflicto interno del héroe tiene prioridad.</p>
+</div>
+<div id="mensaje3" class="mensajeinfo">
+  <button class="close-btn" onclick="cerrarMensaje('mensaje3')">Cerrar</button>
+  <p>Shakespeare dice que la muerte es el fin de todo y que Romeo y Julieta murieron abrazados en el mausoleo de Verona. Ahora, 400 años después, os vamos a demostrar que Shakespeare se equivocó: Ana Belén y José Luis nos van a contar la verdadera historia de este amor prohibido.</p>
+</div>
+<div id="mensaje4" class="mensajeinfo">
+  <button class="close-btn" onclick="cerrarMensaje('mensaje4')">Cerrar</button>
+  <p>Es una obra humana que refleja el peregrinaje del ser humano en busca de “la Luz”, es el descubrimiento del hombre hacia Dios, con la ayuda de la razón (Virgilio) y de la fe (Beatriz). El poema es una epopeya religiosa que narra con realismo un viaje, es un canto a la humanidad.</p>
+</div>
+<div id="mensaje5" class="mensajeinfo">
+  <button class="close-btn" onclick="cerrarMensaje('mensaje5')">Cerrar</button>
+  <p>La Odisea narra la historia del héroe griego Odiseo, Ulises, el viaje de regreso a su reino de Ítaca donde le esperan su esposa Penélope, rodeada de pretendiente, y su hijo Telémaco. Un trayecto de aproximadamente un mes de navegación que se alarga aproximadamente diez años, los mismos que duró la guerra de Troya.</p>
+</div>
+<div id="mensaje6" class="mensajeinfo">
+  <button class="close-btn" onclick="cerrarMensaje('mensaje6')">Cerrar</button>
+  <p>La Ilíada es un poema de género épico que trata el asedio de la ciudad de Troya por los griegos para rescatar a Helena, esposa del rey Menelao, la cual fue raptada por Paris, príncipe troyano. Después de este hecho, se origina una guerra entre griegos y troyanos.</p>
+</div>
 
-  <footer>
-    <p>Copyright 2024 Equipo Laravellum</p>
-    <div id="logosFooter">
-        <img src="../resources/linkedin.png">
-        <img src="../resources/x.png">
-        <img src="../resources/insta.png">
-        <img src="../resources/facebook.png">
+<main>
+  <div class="events">
+    <div class="cardEvent">
+      <h2>Festival de Jazz</h2>
+      <p>Del 1 al 5 de noviembre</p>
+      <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+      <div class="buttons">
+        <button id="evento1Agenda" onclick="reservar('agendaId','reservación exitosa')">reservar</button>
+        <button id="info1" onclick="info('1')">+ info</button>
+      </div>
+      <p id="agendaId"></p>
     </div>
-  </footer>
+    <div class="cardEvent">
+      <h2>Hamlet</h2>
+      <p>Del 6 al 10 de diciembre</p>
+      <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+      <div class="buttons">
+        <button id="evento2Agenda" onclick="reservar('agenda2','reservación exitosa')">reservar</button>
+        <button id="info2" onclick="info('2')">+ info</button>
+      </div>
+      <p id="agenda2"></p>
+    </div>
+    <div class="cardEvent">
+      <h2>Romeo y Julieta</h2>
+      <p>Del 6 al 10 de diciembre</p>
+      <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+      <div class="buttons">
+        <button id="evento3Agenda" onclick="reservar('agenda3','reservación exitosa')">reservar</button>
+        <button id="info3" onclick="info('3')">+ info</button>
+      </div>
+      <p id="agenda3"></p>
+    </div>
+    <div class="cardEvent">
+      <h2>La Divina Comedia</h2>
+      <p>Del 6 al 10 de enero</p>
+      <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+      <div class="buttons">
+        <button id="evento4Agenda" onclick="reservar('agenda4','reservación exitosa')">reservar</button>
+        <button id="info4" onclick="info('4')">+ info</button>
+      </div>
+      <p id="agenda4"></p>
+    </div>
+    <div class="cardEvent">
+      <h2>La Odisea</h2>
+      <p>Del 6 al 10 de febrero</p>
+      <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+      <div class="buttons">
+        <button id="evento5Agenda" onclick="reservar('agenda5','reservación exitosa')">reservar</button>
+        <button id="info5" onclick="info('5')">+ info</button>
+      </div>
+      <p id="agenda5"></p>
+    </div>
+    <div class="cardEvent">
+      <h2>La Iliada</h2>
+      <p>Del 6 al 10 de marzo</p>
+      <img src="./resources/icono-evento.jpg" class="iconoEvento" />
+      <div class="buttons">
+        <button id="evento6Agenda" onclick="reservar('agenda6','reservación exitosa')">reservar</button>
+        <button id="info6" onclick="info('6')">+ info</button>
+      </div>
+      <p id="agenda6"></p>
+    </div>
+  </div>
+</main>
 
-  <script src="script.js"></script>
+<footer>
+  <p>Copyright 2024 Equipo Laravellum</p>
+  <div id="logosFooter">
+      <img src="../resources/linkedin.png">
+      <img src="../resources/x.png">
+      <img src="../resources/insta.png">
+      <img src="../resources/facebook.png">
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
 </body>
 
 </html>
