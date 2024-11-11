@@ -16,3 +16,11 @@ function ejecutarSlider(){
 }
 
 ejecutarSlider();
+
+
+// Responsive Nav
+
+function mostrar() {
+    let nav = document.querySelector('#nav');
+    nav.classList.toggle("activo");
+}
