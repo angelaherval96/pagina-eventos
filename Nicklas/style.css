@@ -20,7 +20,6 @@ header {
 
 .logo img {
     width: 200px;
-
 }
 
 nav {
@@ -37,11 +36,10 @@ a {
 
 main {
     display: flex;
-    max-height: 1500px;
+    max-height: 2000px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px red solid;
     background-color: #f8f7f4;
 }
 
@@ -61,7 +59,7 @@ footer {
 
 .slider {
     display: flex;
-    max-height: 500px;
+    max-height: 150px;
 }
 
 .intro {
@@ -70,12 +68,13 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 75%;
+    padding-top: 50px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 400px;
     width: 75%;
     gap: 40px;
     padding: 10px;
@@ -84,10 +83,12 @@ footer {
 .grid-container2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 400px;
     width: 75%;
     gap: 40px;
     padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .item {
@@ -97,8 +98,8 @@ footer {
     border: none;
     border-radius: 10px;
     position: relative;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
 .itemScroll {
@@ -106,7 +107,7 @@ footer {
     overflow-y: scroll;
     border-radius: 10px;
     padding: 10px;
-    
+
 }
 
 .eventoIndividual {
@@ -231,9 +232,22 @@ footer {
     width: 16%;
 }
 
-.videos {
+.videosFut {
     width: 100%;
-    height: 100vh;
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.videosBask {
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.videosF1 {
+    width: 100%;
     position: absolute;
     transition: all 0.5s;
     opacity: 0;
@@ -256,9 +270,13 @@ footer {
 
 .boton {
     padding: 10px 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: black;
+    color: white;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover {
+    transform: scale(2);
 }
