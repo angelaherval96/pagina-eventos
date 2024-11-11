@@ -1,0 +1,207 @@
+* {
+
+    padding:0px;
+    margin:0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #5b4f47;
+    color: white;
+    height: 10vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+
+.logo img {
+    width: 9rem;
+    height: 5rem;
+
+}
+nav {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 70%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #ddc1a7; 
+    margin-top: -5px;
+}
+/* main{
+     height: 80vh;  
+} */
+.background{
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+.videoBackground{
+    /* width: 100%;
+    height: auto; */
+    position: relative;
+    bottom: 30rem; 
+    z-index: 1;
+}
+.textoVideo{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    padding-top: 3%;
+    top: 10%;
+    left: 10%; 
+}
+
+.artistas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f8f7f4;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    cursor: pointer;
+    
+    
+}
+.artista:hover img{
+    opacity: 30%; 
+    
+   
+}
+
+.slider.active{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.slider{
+    display: none;
+}
+.nombreCantante{
+    color: black;
+    position: absolute;
+    top: 50%;
+    padding-left: 5%;
+    font-size:x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.conciertos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f8f7f4 ;
+    padding: 20px;
+    gap: 20px;
+}
+
+.proximosConciertos, .conciertosPop, .conciertosMusicaUrbana{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.concierto{
+    border:2px solid #5b4f47;
+    background-color: #f6ebcd ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    gap: 0.5rem;
+    padding-bottom: 2%;
+    border-radius: 5px;
+}
+.autor{
+    font-weight: bold;
+}
+.concierto p{
+    padding-left: 1rem;
+}
+.boton{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+button{
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:  #f8f7f4; 
+}
+button:hover{
+    background-color:#ddc1a7;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+} 
+.compra{
+    text-transform:initial;
+    color:green;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #ddc1a7;
+
+}
+footer p {
+    padding-left: 5rem;
+}
+
+#logosFooter {
+
+    display:flex;
+    gap:1rem;
+    padding-right: 5rem;
+    
+    }
+
+#logosFooter img {
+    height: 2rem;
+    width: 2rem;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+#logosFooter img:hover {
+    transform: scale(1.2)
+
+}
+
+
+
+
