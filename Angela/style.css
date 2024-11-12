@@ -157,13 +157,74 @@ main{
     color: black;
     position: absolute;
     top: 50%;
-    padding-left: 5%;
+    padding: 0% 5%;
     font-size:x-large;
     font-weight: bold;
     text-transform: uppercase;
 }
+.nombreCantante1{
+    padding-left: 3%;
+}
+.nombreCantante3{
+    padding-left: 7%;
+}
+.nombreCantante5, .nombreCantante9, .nombreCantante4{
+    padding-left: 4%;
 
-
+}
+@media (max-width: 768px) {
+    .nombreCantante1{
+        top: 15%;
+        left: 25%;
+    }
+    .nombreCantante2{
+        top: 39%;
+        left: 40%;
+    }
+    .nombreCantante3{
+        top: 63%;
+        left: 40%;
+    }
+    
+    .nombreCantante4{
+        top: 86%;
+        left: 30%;
+    }
+    .nombreCantante5{
+        top: 15%;
+        left: 33%;
+    }
+    .nombreCantante6{
+        top: 39%;
+        left: 35%;
+    }
+    .nombreCantante7{
+        top: 63%;
+        left: 30%;
+    }
+    
+    .nombreCantante8{
+        top: 86%;
+        left: 37%;
+    }
+    .nombreCantante9{
+        top: 15%;
+        left: 30%;
+    }
+    .nombreCantante10{
+        top: 39%;
+        left: 35%;
+    }
+    .nombreCantante11{
+        top: 63%;
+        left: 35%;
+    }
+    
+    .nombreCantante12{
+        top: 86%;
+        left: 30%;
+    }
+}
 .conciertos{
     display: flex;
     flex-direction: column;
@@ -263,7 +324,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-   
     footer{
         flex-direction: column;
     }
