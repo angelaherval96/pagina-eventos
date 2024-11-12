@@ -39,4 +39,9 @@ function compraRealizada(idCompra){
     }, 3000);
 }
 
+function mostrar() {
+    let nav = document.querySelector('#nav');
+    nav.classList.toggle("activo");
+}
+
    
