@@ -4,10 +4,7 @@
     margin:0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* html, body{
-    height: 100%;
-    width: 100%;
-} */
+
 header {
     display:flex;
     justify-content:center;
@@ -84,7 +81,6 @@ a:hover{
         background-color: #5b4f47;
         color: white;
         height: 10vh;
-        width: 100%;
         padding: 0 20px;
         
     }
@@ -115,8 +111,6 @@ main{
     overflow: hidden;
 }
 .videoBackground{
-    /* width: 100%;
-    height: auto; */
     position: relative;
     bottom: 30rem; 
     z-index: 1;
@@ -241,6 +235,9 @@ main{
     flex-wrap: wrap;
     gap: 20px;
 }
+.conciertosMusicaUrbana{
+    padding-bottom: 4rem;
+}
 
 .concierto{
     border:2px solid #5b4f47;
@@ -326,6 +323,11 @@ footer p {
 @media (max-width: 768px) {
     footer{
         flex-direction: column;
+        justify-content: center; 
+    }
+    footer p{
+        padding-left: 0;
+        
     }
     #logosFooter{
         padding-right: 0;
