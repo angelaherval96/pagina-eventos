@@ -3,7 +3,8 @@ const parrafoOculto1 = document.getElementById("parrafoOculto1");
 const parrafoOculto2 = document.getElementById("parrafoOculto2");
 const parrafoOculto3 = document.getElementById("parrafoOculto3");
 const parrafoOculto4 = document.getElementById("parrafoOculto4");
-
+const modal = document.getElementById("modal");
+const cerrar = document.getElementByClassName("cerrar");
 
 
 function inscrito1() {
@@ -27,8 +28,18 @@ function inscrito3() {
 
 function inscrito4() {
 
-    parrafoOculto4.style.display = "block";
+    alert('Las entradas para este evento estan agotadas')
 
+}
+
+function mostrarModal() {
+modal.style.display="block";
+
+}
+
+function cerrarModal() {
+
+    modal.style.display="none";
 }
 
 

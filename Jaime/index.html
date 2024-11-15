@@ -23,7 +23,17 @@
         <img onclick="mostrar()" class="burger" src="/Nicklas/resources/barraMenu.png" alt="">
     </header>
     <main>
+        <div id="modal">
 
+            <div class="contentModal">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+
+                <p>Las entradas para este evento están agotadas, sentimos las molestias</p>
+
+
+            </div>
+
+        </div>
       <div><h1>Convenciones</h1><div>
         <div id="contenedorTarjetas">
             <div id="tarjetasRight">
@@ -46,11 +56,11 @@
                     
                     <img src="/Jaime/resourcesJaime/animales.jpg">
     
-                    <h2>ManagaFest</h2>
+                    <h2>XVIII Congreso Andaluz de Veterinarios</h2>
     
-                    <h3>Convencion de Manga y Anime</h3>
+                    <h3>Congreso Veterinario</h3>
     
-                    <p>Evento repleto de concursos, tiendas y actividades relacionadas con la animación japonesa</p>
+                    <p>Nueva edicion del anual congreso de veterinarios andaluces</p>
     
                     <button onclick="inscrito2()">Inscribirme</button>
 
@@ -65,11 +75,11 @@
                 
                 <img src="/Jaime/resourcesJaime/ciencia.jpg">
 
-                <h2>ManagaFest</h2>
+                <h2>XVI Feria de las Ciencias</h2>
 
-                <h3>Convencion de Manga y Anime</h3>
+                <h3>Convencion cientifica</h3>
 
-                <p>Evento repleto de concursos, tiendas y actividades relacionadas con la animación japonesa</p>
+                <p>Charlas,exposiciones y eventos relacionados con el mundo de la ciencia</p>
 
                 <button onclick="inscrito3()">Inscribirme</button>
 
@@ -80,13 +90,13 @@
                 
                 <img src="/Jaime/resourcesJaime/juegos.jpg">
 
-                <h2>ManagaFest</h2>
+                <h2>XVII Festival de Juegos de Cordoba</h2>
 
-                <h3>Convencion de Manga y Anime</h3>
+                <h3>Convencion de juegos de mesa y ocio</h3>
 
-                <p>Evento repleto de concursos, tiendas y actividades relacionadas con la animación japonesa</p>
+                <p>Ludoteca con mas de 200 juegos de mesa, tiendas y presentación de nuevos juegos</p>
 
-                <button onclick="inscrito4()">Inscribirme</button>
+                <button onclick="mostrarModal()"> Inscribirme</button>
 
                 <p hidden id="parrafoOculto4"> Inscrito correctamente </p>
 
