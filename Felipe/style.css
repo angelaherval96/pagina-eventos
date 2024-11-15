@@ -11,6 +11,7 @@ header {
     align-items: center;
     background-color: #5b4f47;
     color: white;
+    height: 10vh;
 }
 
 .logo{
@@ -20,7 +21,8 @@ header {
 }
 
 .logo img {
-    width: 150px; 
+    width: 9rem;
+    height: 5rem;
 }
 
 nav {
@@ -51,6 +53,8 @@ header a:hover{
         position: absolute;
         right: 20px;
         color: white;
+        width: 2rem;
+        height: 2rem;
     }
 
     #nav {
@@ -76,8 +80,7 @@ header a:hover{
         align-items: center;
         background-color: #5b4f47;
         color: white;
-        height: 14vh;
-      
+        height: 10vh;
         padding: 0 20px;
         
     }
@@ -90,6 +93,7 @@ header a:hover{
 
     .logo {
         width: auto;
+        margin-top: -10px;
     }
 }
 
@@ -167,10 +171,6 @@ button:hover{
 
 }
 
-#logosFooter img {
-    width: 50px;
-
-}
 
 footer{
     display: flex;
@@ -234,6 +234,7 @@ footer{
     height: 2rem;
     width: 2rem;
     transition: transform .2s;
+    cursor: pointer;
 }
 
 #logosFooter img:hover {
@@ -241,17 +242,17 @@ footer{
 
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    background-color: #ddc1a7;
-
-}
-
-footer p {
-
-    padding-left: 5rem;
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    footer p{
+        padding-left: 0;
+        
+    }
+    #logosFooter{
+        padding-right: 0;
+    }
+   
 }
