@@ -187,6 +187,10 @@ footer p {
     .itemScroll {
         overflow-y: scroll;
     }
+
+    .botones {
+        margin-bottom: 100px;
+    }
 }
 
 .item {
@@ -375,7 +379,9 @@ footer p {
 }
 
 .boton:hover {
-    transform: scale(2);
+    transform: scale(3);
+    color: #ddc1a7;
+    cursor: pointer;
 }
 
 .linea{
