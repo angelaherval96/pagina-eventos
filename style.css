@@ -60,7 +60,7 @@ header a:hover{
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .burger {
         display: block;
         position: absolute;
@@ -127,8 +127,6 @@ main img {
 
 main h1 {
 
-    
-
     font-family: 'Noto Sans';
    
     font-size: 6rem;
@@ -142,6 +140,23 @@ main p{
     font-size: 2rem;
     color: #f8f7f4;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+@media (max-width: 768px) {
+    main h1{
+        font-size: 3rem;
+    }
+    main p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 420px) {
+    main h1{
+        font-size: 2rem;
+    }
+    main p{
+        font-size: 1rem;
+    }
 }
 
 #logosFooter {
@@ -178,6 +193,20 @@ footer p {
 
     padding-left: 5rem;
 }
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        justify-content: center; 
+    }
+    footer p{
+        padding-left: 0;
+        
+    }
+    #logosFooter{
+        padding-right: 0;
+    }
+   
+}
 
 .sliders{
     display: flex;
@@ -207,8 +236,6 @@ footer p {
     z-index: 1;
     text-align: center;
     color: #ffffff;
-    
-
 }
 
 

@@ -45,7 +45,7 @@ header a:hover{
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .burger {
         display: block;
         position: absolute;

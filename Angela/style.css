@@ -47,7 +47,7 @@ a:hover{
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .burger {
         display: block;
         position: absolute;
@@ -82,18 +82,13 @@ a:hover{
         color: white;
         height: 10vh;
         padding: 0 20px;
-        
     }
-
+    
     header a:hover{
         color: #ddc1a7; 
         margin-top: -5px;
-    }
-
-    header a:hover{
         transform: scale(1.1);
-        text-decoration: underline;
-        margin: 0;
+        text-decoration: underline;  
     }
 
     .logo {
@@ -133,7 +128,8 @@ main{
     padding: 20px;
     gap: 20px;
     position: relative;
-    cursor: pointer; 
+    cursor: pointer;
+    
 }
 .artista:hover img{
     opacity: 30%; 
@@ -165,6 +161,59 @@ main{
 .nombreCantante5, .nombreCantante9, .nombreCantante4{
     padding-left: 4%;
 
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .nombreCantante1{
+        top: 30%;
+        left: 17%;
+    }
+    .nombreCantante2{
+        top: 30%;
+        left: 60%;
+    }
+    .nombreCantante3{
+        top: 73%;
+        left: 20%;
+    }
+    
+    .nombreCantante4{
+        top: 73%;
+        left: 55%;
+    }
+    .nombreCantante5{
+        top: 30%;
+        left: 20%;
+    }
+    .nombreCantante6{
+        top: 29%;
+        left: 57%;
+    }
+    .nombreCantante7{
+        top: 73%;
+        left: 15%;
+    }
+    
+    .nombreCantante8{
+        top: 72%;
+        left: 60%;
+    }
+    .nombreCantante9{
+        top: 28%;
+        left: 18%;
+    }
+    .nombreCantante10{
+        top: 29%;
+        left: 58%;
+    }
+    .nombreCantante11{
+        top: 73%;
+        left: 20%;
+    }
+    
+    .nombreCantante12{
+        top: 73%;
+        left: 55%;
+    }
 }
 @media (max-width: 768px) {
     .nombreCantante1{
@@ -284,6 +333,7 @@ img{
 .compra{
     text-transform:initial;
     color:green;
+    height: 20px;
 }
 
 footer{
