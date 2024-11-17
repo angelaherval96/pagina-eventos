@@ -42,13 +42,14 @@ header {
    display:none;
     z-index: 1;
     position: fixed;
-    top:50;
-    left:50;
+    top:0;
+    left:0;
     height: 100%;
     width: 100%;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
     overflow: auto;
+   
    
 
 }
@@ -57,11 +58,35 @@ header {
    
     background-color: #fefefe;
     margin: 15% auto; 
-    padding: 20px;
+    text-align: center;
     border: 1px solid #888;
-    width: 80%; 
+    width: 50%; 
+    height: 30%;
+    border-radius: 15px;
+    
 
 }
+
+.contentModal p {
+   
+    margin-top: 2rem;
+
+}
+
+.contentModal span {
+   
+    margin-right: 1rem;
+
+}
+
+.contentModal img {
+   
+    width: 25%;
+    height: 80%;
+
+}
+
+
 
 .cerrar {
     color: #aaa;
@@ -90,7 +115,6 @@ header a{
     text-transform: uppercase;
 }
 
-/* Nick */
 
 header a:hover{
     color: #ddc1a7; 
@@ -148,9 +172,31 @@ header a:hover{
     .logo {
         width: auto;
     }
+
+    .logo img {
+        width: 7rem;
+        height: 4rem;
+    
+    }
+
+    #contenedorTarjetas{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:6rem;
+        padding-bottom: 5rem;
+        
+    }
+
+    .contentModal img {
+   
+        width: 30%;
+        height: 55%;
+    
+    }
 }
 
-/* Nick */
 
 #contenedorTarjetas{
 
@@ -169,7 +215,6 @@ header a:hover{
     align-items: center;
     gap:100px;
     
-
     
 }
 
@@ -184,7 +229,7 @@ header a:hover{
 }
 
 .tarjetas {
-    width: 50%;
+    width: 55%;
     height: 50%;
     border: 2px solid black;
     text-align: center;
