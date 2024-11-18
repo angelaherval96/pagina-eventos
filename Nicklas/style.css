@@ -48,7 +48,7 @@ header a:hover{
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .burger {
         display: block;
         position: absolute;
@@ -80,7 +80,7 @@ header a:hover{
         background-color: #5b4f47;
         color: white;
         height: 10vh;
-        width: 100%;
+        
         padding: 0 20px;
         
     }
@@ -172,7 +172,7 @@ footer p {
     margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .grid-container {
         grid-template-columns: 1fr;
         width: 90%;
